@@ -1,8 +1,8 @@
 <div align="center">
 
-<h2> CoordFill: </br>
+<h3> CoordFill: 
 Efficient High-Resolution Image Inpainting via Parameterized Coordinate Querying
- </h2> 
+ </h3> 
  <br/>
   <a href='https://arxiv.org/abs/2303.08524'><img src='https://img.shields.io/badge/ArXiv-2303.08524-red' /></a> 
   <br/>
