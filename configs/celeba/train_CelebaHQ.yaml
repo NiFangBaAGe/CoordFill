@@ -1,0 +1,63 @@
+train_dataset:
+  dataset:
+    name: paired-image-folders
+    args:
+      root_path_1: ./load/celebAHQ_train
+      root_path_2: ./load/celebAHQ_train_mask
+      split_file:
+      split_key: none
+      cache: none
+  wrapper:
+    name: sr-implicit-uniform-varied
+    args:
+      size_min: 512
+      size_max: 512
+      ratio: 256
+      augment: true
+  batch_size: 16
+
+val_dataset:
+  dataset:
+    name: paired-image-folders
+    args:
+      root_path_1: ./load/celebAHQ_test
+      root_path_2: ./load/celebAHQ_test_mask
+      split_file:
+      split_key: none
+      cache: none
+  wrapper:
+    name: sr-implicit-paired
+    args:
+      sample_q: 1024
+      inp_size: 512
+  batch_size: 16
+
+data_norm:
+  inp: {sub: [0.5], div: [0.5]}
+  gt: {sub: [0.5], div: [0.5]}
+  gt_rgb: {sub: [0.5], div: [0.5]}
+
+model:
+  name: gan
+  args:
+    encoder_spec:
+      name: coordfill
+      multi_res_training: true
+      mask_prediction: true
+      attffc: true
+      scale_injection: true
+      args:
+        no_upsampling: true
+
+
+optimizer:
+  name: adam
+  args:
+    lr: 1.e-4
+epoch_max: 100
+multi_step_lr:
+  milestones: [50]
+  gamma: 0.1
+
+epoch_val: 1
+epoch_save: 50

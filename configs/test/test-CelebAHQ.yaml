@@ -1,0 +1,31 @@
+test_dataset:
+  dataset:
+    name: paired-image-folders
+    args:
+      root_path_1: ./load/celebAHQ_test
+      root_path_2: ./load/celebAHQ_test_mask
+      split_file:
+      split_key: none
+  wrapper:
+    name: sr-implicit-paired
+    args:
+      sample_q: 1024
+      inp_size: 512
+  batch_size: 16
+
+data_norm:
+  inp: {sub: [0.5], div: [0.5]}
+  gt: {sub: [0.5], div: [0.5]}
+  gt_rgb: {sub: [0.5], div: [0.5]}
+
+model:
+  name: gan
+  args:
+    encoder_spec:
+      name: coordfill
+      multi_res_training: true
+      mask_prediction: true
+      attffc: true
+      scale_injection: true
+      args:
+        no_upsampling: true
