@@ -83,10 +83,10 @@ Please find the pre-trained models [here](https://uofmacau-my.sharepoint.com/:f:
 If you find our work useful in your research, please consider citing:
 
 ```
-@article{liu2023coordfill,
+@inproceedings{liu2023coordfill,
   title={CoordFill: Efficient High-Resolution Image Inpainting via Parameterized Coordinate Querying},
   author={Liu, Weihuang and Cun, Xiaodong and Pun, Chi-Man and Xia, Menghan and Zhang, Yong and Wang, Jue},
-  journal={arXiv preprint arXiv:2303.08524},
+  booktitle={AAAI},
   year={2023}
 }
 ```
