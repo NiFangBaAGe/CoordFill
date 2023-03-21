@@ -37,6 +37,8 @@ Efficient High-Resolution Image Inpainting via Parameterized Coordinate Querying
 ## 🎼 Pipeline
 
 ![overview2](https://user-images.githubusercontent.com/4397546/225505967-f27e3649-6c25-4f61-a153-db4cfafbcbed.jpg)
+Giving an input masked image, first, we resample the input image with a fixed resolution before fed to the network, which enables the contextual feature extraction under a unified receptive field. Then, we select the masked region features by the corresponding coordinates. For each spatial feature, we generate the required number of parameters by the linear mapping function, and the parameters are upsampled to the required resolution with nearest-neighbor interpolation. Next, we use the generated parameters to parameterize the pixel-wise querying network, Hence, we obtain a series of MLPs that are spatial-adaptive. Finally, the pixel-wise querying network takes the hole pixel’s coordinate as input and outputs the color values. 
+
 
 
 ## Environment
