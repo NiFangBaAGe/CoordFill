@@ -52,11 +52,17 @@ pip install -r requirements.txt
 python demo.py --input [INPUT_PATH] --mask [MASK_PATH] --config [CONFIG_PATH] --model [MODEL_PATH] --resolution [HEIGHT],[WIDTH]
 ```
 `[INPUT_PATH]`: input image
+
 `[MASK_PATH]`: input mask
+
 `[CONFIG_PATH]`: config file
+
 `[MODEL_PATH]`: backbone checkpoint
+
 `[HEIGHT]`: target height
+
 `[WIDTH]`: target width
+
 
 ## Train
 Single GPU training: 
