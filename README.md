@@ -1,7 +1,7 @@
 
-<h2> <a href='https://arxiv.org/abs/2303.08524'>[AAAI 2023 (Oral)] CoordFill: <br>
+<h3> <a href='https://arxiv.org/abs/2303.08524'>[AAAI 2023 (Oral)] CoordFill: <br>
 Efficient High-Resolution Image Inpainting via Parameterized Coordinate Querying </a> 
- </h2> 
+ </h3> 
 <div>
     <a target='_blank'>Weihuang Liu <sup> 1,2</sup> </a>&emsp;
     <a href='https://vinthony.github.io/' target='_blank'>Xiaodong Cun <sup>*,2</sup></a>&emsp;
