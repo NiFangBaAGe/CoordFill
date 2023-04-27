@@ -1,12 +1,7 @@
-<div align="center">
 
-<h3> CoordFill: 
-Efficient High-Resolution Image Inpainting via Parameterized Coordinate Querying
- </h3> 
- <br/>
-  <a href='https://arxiv.org/abs/2303.08524'><img src='https://img.shields.io/badge/ArXiv-2303.08524-red' /></a> 
-  <br/>
-  <br/>
+<h2> <a href='https://arxiv.org/abs/2303.08524'>[AAAI 2023 (Oral)] CoordFill: <br>
+Efficient High-Resolution Image Inpainting via Parameterized Coordinate Querying </a> 
+ </h2> 
 <div>
     <a target='_blank'>Weihuang Liu <sup> 1,2</sup> </a>&emsp;
     <a href='https://vinthony.github.io/' target='_blank'>Xiaodong Cun <sup>*,2</sup></a>&emsp;
@@ -20,10 +15,6 @@ Efficient High-Resolution Image Inpainting via Parameterized Coordinate Querying
     <sup>1</sup> University of Macau &emsp; <sup>2</sup> Tencent AI Lab &emsp; 
 </div>
 <br>
-<i><strong><a href='https://arxiv.org/abs/2303.08524' target='_blank'>AAAI 2023</a></strong></i>
-<br>
-<br>
-</div>
 
 
 [comment]: <> (## 🚧 TODO)
