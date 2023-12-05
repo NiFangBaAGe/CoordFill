@@ -72,7 +72,7 @@ python test.py --config [CONFIG_PATH] --model [MODEL_PATH]
 
 ## Models
 
-Please find the pre-trained models [here](https://uofmacau-my.sharepoint.com/:f:/g/personal/mc05379_umac_mo/Em6_auDrqwhKl34MO9w_AggBBMhI3lWb6pQfUbYqCFQ9ZA?e=xduixN).
+Please find the pre-trained models [here](https://drive.google.com/drive/folders/1AyZVa_H8XmKNyNZFoV5A_6JuFdi6Oy8o?usp=sharing).
 
 
 ## 🛎 Citation
